@@ -848,7 +848,7 @@
 		input[type="submit"].fit,
 		input[type="reset"].fit,
 		input[type="button"].fit,
-		.button.fit {
+		.button.	 {
 			display: block;
 			margin: 0 0 1em 0;
 			min-width: 0;
