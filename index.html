@@ -34,26 +34,50 @@
 
 		<!-- Main -->
 			<div id="main">
-
 				<!-- One -->
 					<section id="one">
 					<ul class="actions">
+							<li><a href ="index.html" target ="_blank" class="button">Home</a></li>
 							<li><a href="http://www.linkedin.com/in/manishkurse" target="_blank" class="button">LinkedIn</a></li>
 							<li><a href="Resume/Resume_ManishKurse.pdf" class="button">Resumé</a></li>
 						</ul>
 						<header class="major">
 							<h2>Data science projects</h2>
 						</header>
-						<p>Below are some projects that I have worked on over the course of my Ph.D. and beyond.</p>
+						<p>Below are some data science side projects that I have recently worked on. I also present projects done during my Ph.D.
+						The focus of my side projects has been to learn Python (NumPy, scikit-learn, Pandas) and do data science on some fun datasets publicly available.
+						My Ph.D. projects focussed on computational modeling, multivariable regression and heuristic optimization related to human musculoskeletal systems.</p>
 					</section>
 
 				<!-- Two -->
+				
 					<section id="two">
-						<h2>Projects</h2>
+						<h2>Data Science Side-Projects</h2>
 						<div class="row">
 							<article class="6u 12u$(xsmall) proj-item">
+								<a href="PythonProjects/BikeSharingDemand.html" class="image fit thumb">
+								<img src="http://kaggle2.blob.core.windows.net/competitions/kaggle/3948/logos/front_page.png" height = "200" alt="" /></a>
+								<h3><a href="PythonProjects/BikeSharingDemand.html"> Predicting the rental count for a bike sharing company (Kaggle) </a></h3>
+								<p>I performed exploratory data analysis using Python/Pandas/NumPy/matplotlib to understand which features were critical and gain more insight on the data.
+								 I then used Random Forest Regression in scikit-learn to predict the bike share count on the test data set.</br>
+								Exploratory data analysis, Random forest regression
+								</p>
+							</article>
+							<article class="6u$ 10u$(xsmall) proj-item">
+								<a href="PythonProjects/PredictTitanicSurvivors.html" class="image fit thumb"><img src="http://kaggle2.blob.core.windows.net/competitions/kaggle/3136/logos/front_page.png" height = "200" alt="" /></a>
+								<h3><a href = "PythonProjects/PredictTitanicSurvivors.html"> Predicting Survival on the Titanic (Kaggle) </a></h3>
+								<p>This is a machine learning classification project based on a small dataset. I used this project to learn Python and the tools for data science (NumPy, scikit-learn, Pandas, matplotlib). 
+								I performed basic data cleaning and pre-processing. I used Random Forest classification to predict survival of passengers on the test set provided. </p>
+							</article>
+						</div>
+					</section>
+					<section id="three">		
+						<h2>Ph.D. Projects</h2>
+						<div class="row">
+
+							<article class="6u 12u$(xsmall) proj-item">
 								<a href="PhD_work/ManishKurseDissertation.pdf#page=47" class="image fit thumb"><img src="images/MMSSetup.jpg"  height = "200" alt="" /></a>
-								<h4><a href="PhD_work/ManishKurseDissertation.pdf#page=4">Inference of analytical functions modeling finger movement using symbolic regression</a></h4>
+								<h3><a href="InferenceAnalyticalFunctions.html">Inference of analytical functions modeling finger movement using symbolic regression</a></h3>
 								<p>I gathered experimental data consisting of finger movements and tendon excursions using a human cadaveric finger. 
 								Symbolic regression was implemented to infer the functions mapping joint angles to tendon excursions from this dataset. 
 								The form as well as the parameters of the mathematical function are simultaneously inferred from the experimental dataset.</br>
@@ -63,23 +87,18 @@
 							<article class="6u$ 12u$(xsmall) proj-item">
 								<a href="PhD_work/ManishKurseDissertation.pdf#page=124" class="image fit thumb"><img src="images/Finger3Postures.jpg" height = "200" alt="" /></a>
 								<h3><a href="PhD_work/ManishKurseDissertation.pdf#page=124">Modeling environment to simulate fingertip force production in the human finger</a></h3>
-								<p>Mathematical modeling, numerical solver</p>
+								<p>I developed a computational solver to model the interactions of tendon networks of the fingers that uses the Newton Raphson method and linear algebra to solve for fingertip forces.</br>
+								Mathematical modeling, Linear Algebra</p>
 							</article>
 							<article class="6u 12u$(xsmall) proj-item">
 								<a href="PhD_work/ManishKurseDissertation.pdf#page=143" class="image fit thumb"><img src="images/EstExplorParadigm.jpg" height = "200" alt="" /></a>
 								<h3><a href="PhD_work/ManishKurseDissertation.pdf#page=143">Inference of anatomical finger models from sparse data</a></h3>
-								<p>Heuristic optimization</p>
+								<p>I implemented a stochastic hill climbing algorithm to optimize the structure and parameters of tendon networks. I used this to optimize the finger model to best match the experimental dataset 
+								that was collected and evaluated the accuracy of this model by predicting on a test data set. I used the Matlab Parallel Computing Toolbox and Distributed Computing Server 
+								to run the search on multiple processors.</br>
+								Stochastic hill climbing, heuristic optimization</p>
 							</article>
-							<article class="6u$ 12u$(xsmall) proj-item">
-								<a href="PythonProjects/BikeSharingDemand.html" class="image fit thumb"><img src="http://kaggle2.blob.core.windows.net/competitions/kaggle/3948/logos/front_page.png" height = "200" alt="" /></a>
-								<h3><a href = "PythonProjects/BikeSharingDemand.html"> Predicting the rental count for a bike sharing company (Kaggle) </a></h3>
-								<p>A Kaggle project where I used Python for Exploratory Data Analysis and implemented Random Forest Regression to predict survival of passengers on the Titanic. </p>
-							</article>
-							<article class="6u$ 12u$(xsmall) proj-item">
-								<a href="PythonProjects/PredictTitanicSurvivors.html" class="image fit thumb"><img src="http://kaggle2.blob.core.windows.net/competitions/kaggle/3136/logos/front_page.png" height = "200" alt="" /></a>
-								<h3><a href = "PythonProjects/PredictTitanicSurvivors.html"> Predicting Survival on the Titanic (Kaggle) </a></h3>
-								<p>A Kaggle project where I implemented Random Forest Classification to predict survival of passengers on the Titanic. </p>
-							</article>
+							
 						</div>
 						<ul class="actions">
 							<li><a href="#" class="button">Top</a></li>
@@ -87,7 +106,7 @@
 					</section>
 
 				<!-- Three -->
-					<section id="three">
+					<section id="four">
 						<h2>Contact information</h2>
 						<p>The best way to reach me is through email.</p>
 						<div class="row">

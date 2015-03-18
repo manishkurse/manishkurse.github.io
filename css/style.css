@@ -1263,3 +1263,18 @@
 	body.is-touch .poptrox-popup .closer {
 		opacity: 1.0 !important;
 	}
+	
+/* Images */
+	#images{
+    	text-align:center;
+    	margin:50px auto; 
+	}
+	#images a{
+    	margin:0px 20px;
+    	display:inline-block;
+	    text-decoration:none;
+    	color:black;
+ 	}
+ 	div.image-caption {
+ 	 font-size: 8px;
+	}
