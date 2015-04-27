@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Manish Kurse's Webpage</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-large.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-4629002-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="images/ManishKurse.jpg" class="image avatar"><img src="images/ManishKurse.jpg" alt="" /></a>
+				<h1><strong>Manish Kurse, Ph.D.</strong><br />
+				Researcher, biomedical engineer, data scientist<br />
+				passionate about data analysis<br />
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+					<ul class="actions">
+							<li><a href ="index.html" target="_self" class="button">Home</a></li>
+							<li><a href="http://www.linkedin.com/in/manishkurse" target="_blank" class="button">LinkedIn</a></li>
+							<li><a href="Resume/Resume_ManishKurse.pdf" target = "_blank" class="button">Resumé</a></li>
+						</ul>
+						<header class="major">
+							<h2>Modeling environment to simulate fingertip force production in the human finger</h2>
+						</header>
+						<p>
+						 <h3>Goal</h3>					
+						 Develop a solver that can simulate the mechanical interactions of elastic tendon networks with arbitrarily shaped bones. This solver can then be used to model the human finger and determine fingertip force for different input muscle tensions, different tendon network topologies and parameter values.
+						</p>
+						<p>
+						<h3>Background</h3>
+						<h4> Existing models of the human finger are not functionally accurate. My conference abstract from the American Society of Biomechanics Conference, 2011 can be found <a href = PhD_work/ASB_2011.pdf>here</a>. </h4>
+						<li>Control of finger movement and force is made possible by a complex network of tendons.</li>
+						<li>Analytical functions modeling tendon excursions are useful for building robotic and prosthetic hands and understanding control of finger movement.</li>
+						<li>Hypothesis: Simultaneous extraction of form and parameters of functions directly from experimental data will give us more functionally 
+						accurate representations as opposed to assumption of form for the expression apriori.  </li>
+						</p>
+						<p>
+						<h3>Experimental data</h3>
+						<figure>
+						<img src="images/MMSSetup.jpg" alt="Cadaver setup" style="width:304px;height:228px">
+  				        <figcaption><font size="2">A dataset consisting of tendon excursions(output variable) and joint angles (features) were obtained using human cadaveric hands: Tendon excursions were recorded and joint angles calculated from 3D positions of motion capture markers.</font></figcaption>
+  				        </figure>
+  				        </p>
+  				        <p>
+						<h3>Regression: Model inference</h3>
+						Symbolic regression as implemented in the software <a href="http://www.nutonian.com/products/eureqa/">Eureqa</a> was used to regress
+						 mathematical functions of the form s = f(theta1, theta2, theta3 and theta4) for each tendon.
+						The functional accuracy of the models was compared to that of vanilla polynomial regression and Landsmeer models on cross-validation datasets.
+						</p>
+						<p>
+						<h3>Results</h3>
+						Below is a comparison of prediction accuracy and number of parameters on cross-validation datasets: Symbolic regression vs. Polynomial vs. Landsmeer model 
+						<figure>
+						<img src="images/EureqaCad_MultiTrials.jpg" alt="Results: comparison against poly 1">
+  				        <figcaption><font size="2">a) Mean of normalized RMS errors of the different models across two movement trials from the same cadaveric specimen. 
+  				        The best symbolic regression function (picked from the family of functions generated) had lower 
+  				        errors across the two trials compared to the polynomial regressions and the Landsmeer based models.
+  				        (b) Normalized RMS errors vs. the number of parameters in the functions generated using the different techniques. Symbolic regression expressions had fewer parameters and lower RMS errors compared to the other functions.</font></figcaption>
+  				        </figure>
+  				        <figure>
+						<img src="images/EureqaCad_MultiHands.jpg" alt="Cadaver setup" >
+  				        <figcaption><font size="2">(a) Mean of normalized RMS errors of the different regressions across two movement trials from 
+  				        two different cadaveric specimens. The models were all trained on dataset from one specimen but uniformly scaled when tested on the other specimen. 
+  				        The best symbolic regression model (picked from the family of functions generated) had lower mean errors across the specimens, compared to the other functions.
+  				        (b) Normalized RMS errors vs. the number of parameters in the models generated using the different techniques. 
+  				        Symbolic regression expressions had fewer parameters and lower RMS errors compared to the other models.</font></figcaption>
+  				        </figure>
+  				        </p>
+  				        </section>
+
+				<!-- Two -->
+					
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Contact information</h2>
+						<p>The best way to reach me is through email.</p>
+						<div class="row">
+							<div class="8u 12u$(small)">
+								<form method="post" action="#">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+							<div class="4u$ 12u$(small)">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon fa-home"><span class="label">Address</span></h3>
+										 Northridge, CA<br />
+										United States
+									</li>
+									<li>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+										<a href="#">manish.kurse@gmail.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/manishkurse" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://twitter.com/mkurse" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://github.com/manishkurse" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="mailto:manish.kurse@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Manish Kurse</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+	</body>
+</html>
